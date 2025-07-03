@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./AppStyles.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Routes } from "react-router";
+import AllForecasts from "./components/AllForecasts";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <NavBar />
       <div className="app">
         <h1>Hello React!</h1>
+        <AllForecasts />
         <img className="react-logo" src="/react-logo.svg" alt="React Logo" />
 
         <Routes>{/* Currently, we don't have any routes defined */}</Routes>
